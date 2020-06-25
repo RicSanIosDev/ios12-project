@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_IAmRich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby-image" translatesAutoresizingMaskIntoConstraints="NO" id="e6c-ha-4Wq">
+                                <rect key="frame" x="121.5" y="362.5" width="171" height="171"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68i-CR-krU">
+                                <rect key="frame" x="41.5" y="573.5" width="331" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="Press me and you will be rich!!">
+                                    <color key="titleColor" red="0.68672436479999999" green="0.12907242769999999" blue="0.1485889256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEQ-YX-a1Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kap-fi-Zu4">
+                                <rect key="frame" x="20" y="271.5" width="374" height="51"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" red="0.68672436479999999" green="0.12907242769999999" blue="0.1485889256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.31744397079884101" green="0.31744397079884101" blue="0.31744397079884101" alpha="0.37596318493150682" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12462325507614214" green="0.019759613114340949" blue="0.086380464337190932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e6c-ha-4Wq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2dF-x1-NVV"/>
+                            <constraint firstItem="e6c-ha-4Wq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AcO-Iv-Dd4"/>
+                            <constraint firstItem="e6c-ha-4Wq" firstAttribute="top" secondItem="Kap-fi-Zu4" secondAttribute="bottom" constant="40" id="Dhm-2Y-MlL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kap-fi-Zu4" secondAttribute="trailing" constant="20" id="MLK-u1-hhe"/>
+                            <constraint firstItem="68i-CR-krU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iaQ-1l-Svx"/>
+                            <constraint firstItem="Kap-fi-Zu4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nBT-Km-ZlI"/>
+                            <constraint firstItem="68i-CR-krU" firstAttribute="top" secondItem="e6c-ha-4Wq" secondAttribute="bottom" constant="40" id="t8M-zd-SRC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonPush" destination="68i-CR-krU" id="Jbf-ad-5bh"/>
+                        <outlet property="imageViewDiamond" destination="e6c-ha-4Wq" id="dx6-pb-MXV"/>
+                        <outlet property="labelTitle" destination="Kap-fi-Zu4" id="GUh-Ob-YYo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ruby-image" width="171.5" height="171.5"/>
+    </resources>
+</document>
